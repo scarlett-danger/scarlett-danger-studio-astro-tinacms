@@ -11,6 +11,13 @@ import '@fontsource/poppins/800.css';
 import SEO from '../SEO.astro';
 import Footer from '../Footer.astro';
 import Navbar from '../Navbar.astro';
+import Clarity from '@microsoft/clarity';
+
+let projectId: string | undefined = process.env.CLARITY_PROJECT_ID;
+
+if (projectId) {
+  Clarity.init(projectId);
+}
 
 export interface Props {
   title?: string;
