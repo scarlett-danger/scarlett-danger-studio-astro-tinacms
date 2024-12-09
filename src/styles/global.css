@@ -107,7 +107,7 @@ pre[class*='astro-code'] button:hover {
 
 .footer-text-t,
 .footer-text-b {
-  @apply text-slate-400;
+  @apply text-slate-100;
 }
 [data-theme='coffee'] .footer-text-t,
 [data-theme='coffee'] .footer-text-b {
